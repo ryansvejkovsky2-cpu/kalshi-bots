@@ -1,12 +1,12 @@
 {
- "generated_at": 1794673651.5830536,
+ "generated_at": 1794673801.9006515,
  "assets": {
   "gold": {
    "label": "GOLD",
    "dec": 2,
    "spot": 3887.600098,
    "spot_source": "gold-api.com spot",
-   "spot_age": 3.6000900268554688,
+   "spot_age": 3.6012063026428223,
    "closed": true,
    "note": "MARKET CLOSED \u2014 Kalshi lists the 15-minute gold contracts only while that market trades (quiet from Friday afternoon to Sunday evening ET)."
   },
@@ -15,7 +15,7 @@
    "dec": 3,
    "spot": 48.650002,
    "spot_source": "gold-api.com spot",
-   "spot_age": 4.876554489135742,
+   "spot_age": 4.784168720245361,
    "closed": true,
    "note": "MARKET CLOSED \u2014 Kalshi lists the 15-minute silver contracts only while that market trades (quiet from Friday afternoon to Sunday evening ET)."
   },
@@ -24,48 +24,48 @@
    "dec": 2,
    "spot": 88.92,
    "spot_source": "CNBC @CL.1",
-   "spot_age": -24374.850170135498,
+   "spot_age": -24225.001465559006,
    "closed": true,
    "note": "MARKET CLOSED \u2014 Kalshi lists the 15-minute oil contracts only while that market trades (quiet from Friday afternoon to Sunday evening ET)."
   },
   "btc": {
    "label": "BTC",
    "dec": 2,
-   "spot": 65399.235,
+   "spot": 65276.545,
    "spot_source": "Coinbase spot",
-   "spot_age": 3.504753112792969e-05,
+   "spot_age": 3.3855438232421875e-05,
    "closed": false,
-   "tier": "medium",
-   "tier_label": "MEDIUM",
+   "tier": "coin_flip",
+   "tier_label": "COIN FLIP",
    "asset": "btc",
    "ticker": "KXBTC15M-26NOV141130-30",
    "target": 65276.96,
-   "gap": 122.27500000000146,
-   "gap_pct": 0.18696701880381544,
-   "sigma": 81.19331328789842,
-   "band": 109.37858892158776,
+   "gap": -0.4150000000008731,
+   "gap_pct": -0.0006357566871850725,
+   "sigma": 81.62017752710342,
+   "band": 34.688575449018956,
    "nbars": 15,
-   "yes_bid": 0.919,
-   "yes_ask": 0.92,
-   "no_bid": 0.08,
-   "no_ask": 0.081,
-   "spread": 0.0010000000000000009,
-   "no_bid_eff": 0.08,
-   "no_ask_eff": 0.081,
-   "price_label": "UP \u2014 YES costs 92\u00a2",
-   "price_yes": "YES 92\u00a2 / 92\u00a2",
-   "price_no": "NO 8\u00a2 / 8\u00a2",
-   "open_interest": 699988.17,
-   "mins_left": 2.5118069211641947,
-   "call": "UP",
+   "yes_bid": 0.73,
+   "yes_ask": 0.75,
+   "no_bid": 0.25,
+   "no_ask": 0.27,
+   "spread": 0.020000000000000018,
+   "no_bid_eff": 0.25,
+   "no_ask_eff": 0.27,
+   "price_label": "DOWN \u2014 NO costs 27\u00a2",
+   "price_yes": "YES 73\u00a2 / 75\u00a2",
+   "price_no": "NO 25\u00a2 / 27\u00a2",
+   "open_interest": 665214.28,
+   "mins_left": 0.014796610673268635,
+   "call": "DOWN",
    "weak": false,
-   "conviction": "medium",
-   "reason": "CALL UP \u2014 MEDIUM \u2014 driven by gap $122.28 = 1.5x per-minute vol and 112% of the 3-min noise band; price action 2\u20131 UP (agrees with the gap); RSI 66 (hot). Reads against this call: the gap is 112% of the noise band, under the 115% this gate needs; an unfilled bullish AND bearish gap are both open (chop). History note: only 1 settled UP calls on BTC so far \u2014 too few to lean on. PRICED OUT \u2014 costs 92\u00a2 to win 8\u00a2; edge -9.1 pts (83% us vs 92% market). Call stands; don't buy it here.",
+   "conviction": "coin_flip",
+   "reason": "CALL DOWN \u2014 COIN FLIP \u2014 driven by gap $0.42 = 0.0x per-minute vol and 1% of the 0-min noise band; price action 2\u20131 UP (does not confirm the gap); RSI 53 (neutral). COIN FLIP \u2014 the gap is INSIDE the noise band ($0.42 vs a $34.69 band over the 0 min still to run). This is a direction because a call is made every round, not because the read is good. Near 50/50 \u2014 size it that way or skip it. History note: only 2 settled DOWN calls on BTC so far \u2014 too few to lean on. Market disagrees: YES mid 74\u00a2 prices the other side. BUY \u2014 27\u00a2 to win 73\u00a2, edge +25.7 pts (52% us vs 26% market). FLIP COMING \u2014 1,529-lot YES order just stacked.",
    "signals": [
     {
      "name": "FVG",
      "lean": "up",
-     "text": "bullish, 65,411.86\u201365,413.79, unfilled, price below it \u2014 magnet pulls UP"
+     "text": "bearish, 65,291.18\u201365,348.72, unfilled, price below it \u2014 magnet pulls UP"
     },
     {
      "name": "Sweep",
@@ -73,66 +73,50 @@
      "text": "no liquidity sweep in the last 15 min"
     },
     {
-     "name": "Trend",
+     "name": "Exhaustion",
      "lean": "up",
-     "text": "1 bars up, still extending"
+     "text": "4 bars down \u2014 exhaustion leans UP"
     },
     {
      "name": "Momentum",
      "lean": "down",
-     "text": "-12.63 over 3m, +11.12 over 5m, decelerating"
+     "text": "-137.24 over 3m, -135.32 over 5m, accelerating"
     },
     {
      "name": "S/R",
      "lean": null,
-     "text": "round high 65,615.54 (+216.30 away), low 65,082.75 (-316.49 away), target line +122.28 away (the line is a magnet)"
+     "text": "round high 65,615.54 (+338.99 away), low 65,247.46 (-29.09 away), target line -0.42 away (the line is a magnet)"
     }
    ],
    "signal_lean": "up",
-   "gap_dir": "up",
-   "entry_price": 0.92,
-   "breakeven": 0.93,
-   "fee": 0.01,
+   "gap_dir": "down",
+   "entry_price": 0.27,
+   "breakeven": 0.29000000000000004,
+   "fee": 0.02,
    "fvgs": {
     "bullish": [
      {
       "dir": "bullish",
-      "lo": 65105.535,
-      "hi": 65247.455,
-      "idx": 3,
-      "age_min": 12,
-      "inside": false
-     },
-     {
-      "dir": "bullish",
-      "lo": 65356.895,
-      "hi": 65383.865,
-      "idx": 6,
-      "age_min": 9,
-      "inside": false
-     },
-     {
-      "dir": "bullish",
       "lo": 65418.205,
       "hi": 65555.175,
-      "idx": 7,
-      "age_min": 8,
+      "idx": 5,
+      "age_min": 10,
       "inside": false
      },
      {
       "dir": "bullish",
       "lo": 65402.755,
       "hi": 65472.215,
-      "idx": 8,
-      "age_min": 7,
+      "idx": 6,
+      "age_min": 9,
       "inside": false
      },
      {
       "dir": "bullish",
       "lo": 65411.865,
       "hi": 65413.785,
-      "idx": 14,
-      "age_min": 1,
+      "idx": 12,
+      "age_min": 3,
       "inside": false
      }
     ],
@@ -141,24 +125,40 @@
       "dir": "bearish",
       "lo": 65453.165,
       "hi": 65555.175,
-      "idx": 9,
-      "age_min": 6,
+      "idx": 7,
+      "age_min": 8,
       "inside": false
      },
      {
       "dir": "bearish",
       "lo": 65423.4,
       "hi": 65472.215,
-      "idx": 10,
-      "age_min": 5,
+      "idx": 8,
+      "age_min": 7,
       "inside": false
      },
      {
       "dir": "bearish",
       "lo": 65417.21,
       "hi": 65447.645,
-      "idx": 11,
-      "age_min": 4,
+      "idx": 9,
+      "age_min": 6,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 65351.815,
+      "hi": 65413.785,
+      "idx": 14,
+      "age_min": 1,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 65291.185,
+      "hi": 65348.725,
+      "idx": 15,
+      "age_min": 0,
       "inside": false
      }
     ]
@@ -168,32 +168,32 @@
     "available": true,
     "big": [
      {
-      "side": "NO",
-      "price": 0.05,
-      "size": 17044.17,
-      "x_median": 30.581004584234176
+      "side": "YES",
+      "price": 0.97,
+      "size": 13195.64,
+      "x_median": 13.058525482434439
      },
      {
-      "side": "NO",
-      "price": 0.03,
-      "size": 13000.06,
-      "x_median": 23.324978245072618
+      "side": "YES",
+      "price": 0.72,
+      "size": 11142.0,
+      "x_median": 11.0262246412667
      },
      {
-      "side": "NO",
-      "price": 0.02,
-      "size": 10405.15,
-      "x_median": 18.66913671065498
+      "side": "YES",
+      "price": 0.55,
+      "size": 6142.19,
+      "x_median": 6.078367144977733
      }
     ],
     "changes": [
-     "a 60,927-lot YES order appeared at 2\u00a2",
-     "a 1,383-lot YES order appeared at 6\u00a2",
-     "a 1,613-lot YES order appeared at 6\u00a2"
+     "a 1,529-lot YES order appeared at 29\u00a2",
+     "a 1,165-lot YES order appeared at 34\u00a2",
+     "a 1,824-lot YES order appeared at 35\u00a2"
     ],
     "depth": {
-     "yes": 3071713.3600000013,
-     "no": 2385280.649999999
+     "yes": 966950.33,
+     "no": 0
     }
    },
    "whale_trades": {
@@ -201,188 +201,182 @@
     "n": 200,
     "big": [
      {
-      "size": 1000.0,
-      "side": "YES",
-      "price": 0.89,
-      "block": false,
-      "ts": 1794673648.0
-     },
-     {
-      "size": 513.29,
+      "size": 21737.81,
       "side": "NO",
-      "price": 0.917,
+      "price": 0.999,
       "block": false,
-      "ts": 1794673645.0
+      "ts": 1794673798.0
      },
      {
-      "size": 500.0,
-      "side": "YES",
-      "price": 0.9,
+      "size": 18319.03,
+      "side": "NO",
+      "price": 0.999,
       "block": false,
-      "ts": 1794673645.0
+      "ts": 1794673795.0
+     },
+     {
+      "size": 7000.0,
+      "side": "NO",
+      "price": 0.999,
+      "block": false,
+      "ts": 1794673793.0
      }
     ],
-    "yes_vol": 6367.200000000002,
-    "no_vol": 2365.06,
-    "median": 9.925
+    "yes_vol": 0,
+    "no_vol": 129826.14000000004,
+    "median": 112.11000000000001
    },
    "spot_whales": {
     "available": true,
     "n": 200,
     "big": [
      {
-      "size": 0.0109,
-      "price": 65367.63,
+      "size": 1.85006315,
+      "price": 65265.99,
       "dir": "buy",
-      "ts": 1794673646.0,
-      "x_median": 70.86204654791315
+      "ts": 1794673797.0,
+      "x_median": 12027.455142374205
      },
      {
-      "size": 0.01048865,
-      "price": 65370.12,
-      "dir": "sell",
-      "ts": 1794673645.0,
-      "x_median": 68.18781692887792
+      "size": 0.98302557,
+      "price": 65259.99,
+      "dir": "buy",
+      "ts": 1794673797.0,
+      "x_median": 6390.752632947601
      },
      {
-      "size": 0.0096247,
-      "price": 65362.25,
-      "dir": "sell",
-      "ts": 1794673647.0,
-      "x_median": 62.57118710180731
+      "size": 0.80220794,
+      "price": 65266.39,
+      "dir": "buy",
+      "ts": 1794673797.0,
+      "x_median": 5215.238200494084
      }
     ],
     "median": 0.00015382,
-    "buy_vol": 0.04877504999999999,
-    "sell_vol": 0.04752939999999992
+    "buy_vol": 8.301596719999981,
+    "sell_vol": 0.014413800000000008
    },
    "flip": {
     "available": true,
     "on_pace": false,
-    "eta": 29.043942992880478,
-    "rate": -4.209999999999127,
-    "need": -122.27500000000146,
-    "mins_left": 2.5118069211641947
+    "rate": -45.74666666666841,
+    "need": 0.4150000000008731,
+    "mins_left": 0.014796610673268635
    },
    "scalp": {
     "side": "YES",
-    "price": 0.92,
-    "bid": 0.919,
-    "target": 0.95,
-    "payoff": 1.0869565217391304,
+    "price": 0.75,
+    "bid": 0.73,
+    "target": 0.8,
+    "payoff": 1.3333333333333333,
     "cheap": false,
-    "move_cents": 3,
+    "move_cents": 5,
     "why": "price action leans UP"
    },
-   "rsi": 65.93639638759214,
-   "rsi_state": "hot",
+   "rsi": 53.482355751578154,
+   "rsi_state": "neutral",
    "momentum_multi": {
-    "m3": -12.62999999999738,
-    "m5": 11.12000000000262,
-    "m15": 277.08000000000175,
-    "prev3": -35.779999999998836,
-    "decelerating": true,
-    "rate_per_min": -4.209999999999127
+    "m3": -137.24000000000524,
+    "m5": -135.3199999999997,
+    "m15": 65.11000000000058,
+    "prev3": -3.4249999999956344,
+    "decelerating": false,
+    "rate_per_min": -45.74666666666841
    },
    "fvg_distance": {
     "above": {
-     "dir": "bullish",
-     "lo": 65402.755,
-     "hi": 65472.215,
-     "idx": 8,
-     "age_min": 7,
+     "dir": "bearish",
+     "lo": 65291.185,
+     "hi": 65348.725,
+     "idx": 15,
+     "age_min": 0,
      "inside": false,
-     "distance": 3.5199999999967986
+     "distance": 14.639999999999418
     },
-    "below": {
-     "dir": "bullish",
-     "lo": 65356.895,
-     "hi": 65383.865,
-     "idx": 6,
-     "age_min": 9,
-     "inside": false,
-     "distance": 15.37000000000262
-    },
+    "below": null,
     "inside": null
    },
-   "dist_vol": 1.5059737686333108,
+   "dist_vol": 0.005084527044345928,
    "skew": {
-    "yes_mid": 0.9195,
+    "yes_mid": 0.74,
     "market_dir": "up",
-    "edge": 83.89999999999999
+    "edge": 48.0
    },
    "history": {
-    "n": 1,
-    "w": 1,
+    "n": 2,
+    "w": 2,
     "l": 0,
     "wr": 1.0,
     "small": true,
-    "direction": "up"
+    "direction": "down"
    },
    "reversal": {
-    "flag": false,
-    "text": "",
-    "why": [],
-    "trigger": null
+    "flag": true,
+    "trigger": "whale_order",
+    "text": "FLIP COMING \u2014 1,529-lot YES order just stacked.",
+    "why": [
+     "1,529-lot YES order just stacked"
+    ]
    },
-   "reversal_flag": false,
-   "reversal_text": "",
-   "reversal_trigger": null,
-   "reversal_why": [],
+   "reversal_flag": true,
+   "reversal_text": "FLIP COMING \u2014 1,529-lot YES order just stacked.",
+   "reversal_trigger": "whale_order",
+   "reversal_why": [
+    "1,529-lot YES order just stacked"
+   ],
    "reversal_technical": {
     "flag": true,
     "reasons": [
-     "momentum decelerating hard (-12.63 over 3m vs -35.78 the 3m before)",
-     "unfilled bullish FVG 65,356.89\u201365,383.86 below price, 15.37 away (0.2x/min vol) \u2014 acts as a magnet back the other way"
+     "unfilled bearish FVG 65,291.18\u201365,348.72 above price, 14.64 away (0.2x/min vol) \u2014 acts as a magnet back the other way",
+     "price is sitting on the target line ($0.42 away, under half a minute's vol) \u2014 it can flip either side on one print"
     ],
     "level": "high",
-    "direction": "down",
-    "flip_price": 65370.38,
-    "eta_min": 6.85391923990717,
-    "text": "PROJECTED FLIP INCOMING \u2014 the move is UP, the signals point to a flip DOWN: momentum decelerating hard (-12.63 over 3m vs -35.78 the 3m before); unfilled bullish FVG 65,356.89\u201365,383.86 below price, 15.37 away (0.2x/min vol) \u2014 acts as a magnet back the other way. It would show around 65,370.38 (~7 min at the current rate)."
+    "direction": "up",
+    "flip_price": 65319.955,
+    "eta_min": 0.9489215972020221,
+    "text": "PROJECTED FLIP INCOMING \u2014 the move is DOWN, the signals point to a flip UP: unfilled bearish FVG 65,291.18\u201365,348.72 above price, 14.64 away (0.2x/min vol) \u2014 acts as a magnet back the other way; price is sitting on the target line ($0.42 away, under half a minute's vol) \u2014 it can flip either side on one print. It would show around 65,319.96 (~1 min at the current rate)."
    },
    "drivers": [
-    "gap $122.28 = 1.5x per-minute vol and 112% of the 3-min noise band",
-    "price action 2\u20131 UP (agrees with the gap)",
-    "RSI 66 (hot)",
-    "momentum -12.63/3m, +277.08/15m",
+    "gap $0.42 = 0.0x per-minute vol and 1% of the 0-min noise band",
+    "price action 2\u20131 UP (does not confirm the gap)",
+    "RSI 53 (neutral)",
+    "momentum -137.24/3m, +65.11/15m",
     "Fear & Greed 13 (Extreme Fear), -7 vs yesterday \u2014 an extreme reading, contrarian tilt UP",
-    "this asset's UP setups: 1W-0L (small sample \u2014 weighted lightly)"
+    "this asset's DOWN setups: 2W-0L (small sample \u2014 weighted lightly)"
    ],
    "gate_k": 1.15,
-   "quote_age": 0.36968398094177246,
-   "bars_note": "61 live 1-min bars this session",
+   "quote_age": 0.3897721767425537,
+   "bars_note": "60 live 1-min bars this session",
    "close_time": "2026-11-14T16:30:00Z",
-   "secs_left": 150.70841526985168,
+   "secs_left": 0.8877966403961182,
    "phase": "called",
    "expected": {
     "dir": "UP",
-    "text": "Expected: UP \u2014 FIRM \u2014 spot is UP of the line by 1.5x per-minute vol; price action leans UP; 3-min momentum -12.63 \u2014 buy YES at 92\u00a2",
+    "text": "Expected: UP \u2014 FIRM \u2014 price action leans UP; spot is DOWN of the line by 0.0x per-minute vol; 3-min momentum -137.24 \u2014 buy YES at 75\u00a2",
     "votes": {
-     "up": 6.752986884316656,
-     "down": 0.9
+     "up": 4.1,
+     "down": 2.402542263522173
     },
     "why": [
-     "spot is UP of the line by 1.5x per-minute vol",
      "price action leans UP",
-     "3-min momentum -12.63",
-     "unfilled FVG 0.0x vol UP of spot (magnet)",
+     "spot is DOWN of the line by 0.0x per-minute vol",
+     "3-min momentum -137.24",
+     "unfilled FVG 0.2x vol UP of spot (magnet)",
      "fear & greed 13 (Extreme Fear)",
-     "book is priced UP (YES mid 92\u00a2)",
-     "5-min momentum +11.12",
-     "15-min momentum +277.08",
-     "RSI 66 firm"
+     "book is priced UP (YES mid 74\u00a2)",
+     "5-min momentum -135.32",
+     "15-min momentum +65.11"
     ],
     "drivers": [
-     "spot is UP of the line by 1.5x per-minute vol",
      "price action leans UP",
-     "3-min momentum -12.63"
+     "spot is DOWN of the line by 0.0x per-minute vol",
+     "3-min momentum -137.24"
     ],
-    "strength": 0.8823988576480669,
-    "net": 5.852986884316656,
+    "strength": 0.63052262235958,
+    "net": 1.6974577364778267,
     "firm": true,
-    "entry_price": 0.92,
-    "entry_cents": 92,
+    "entry_price": 0.75,
+    "entry_cents": 75,
     "side": "YES"
    },
    "fired_call": "NO CALL",
@@ -403,16 +397,16 @@
    "win_prob": null,
    "win_prob_model": null,
    "win_prob_market": null,
-   "lean_entry_price": 0.92,
-   "lean_entry_cents": 92,
-   "call_entry_cents": 92,
-   "no_edge": true,
-   "no_edge_price": 0.92,
-   "edge_points": -9.05001759102304,
-   "cand_model_p": 0.8289998240897696,
-   "cand_market_p": 0.9195,
-   "tradeable": false,
-   "side_ask": 0.92,
+   "lean_entry_price": 0.75,
+   "lean_entry_cents": 75,
+   "call_entry_cents": 27,
+   "no_edge": false,
+   "no_edge_price": null,
+   "edge_points": 25.667066995032208,
+   "cand_model_p": 0.5166706699503221,
+   "cand_market_p": 0.26,
+   "tradeable": true,
+   "side_ask": 0.27,
    "max_call_price": 0.65,
    "min_edge_points": 3.0,
    "fear_greed": {
@@ -432,47 +426,47 @@
    "confidence": "UNKNOWN",
    "confidence_label": "NO READ",
    "confidence_note": "not enough data to price the call right now",
-   "elapsed_min": 12.493861722946168,
-   "bars": "61 live 1-min bars this session"
+   "elapsed_min": 14.99120911359787,
+   "bars": "60 live 1-min bars this session"
   },
   "sol": {
    "label": "SOL",
    "dec": 2,
-   "spot": 72.87,
+   "spot": 72.675,
    "spot_source": "Coinbase spot",
-   "spot_age": 3.4809112548828125e-05,
+   "spot_age": 3.075599670410156e-05,
    "closed": false,
-   "tier": "coin_flip",
-   "tier_label": "COIN FLIP",
+   "tier": "strong",
+   "tier_label": "STRONG",
    "asset": "sol",
    "ticker": "KXSOL15M-26NOV141130-30",
    "target": 72.882,
-   "gap": -0.012000000000000455,
-   "gap_pct": -0.01646768217373467,
-   "sigma": 0.139695701039396,
-   "band": 0.18789044675249159,
+   "gap": -0.20700000000000784,
+   "gap_pct": -0.2848297213622399,
+   "sigma": 0.13507364246546597,
+   "band": 0.05740629804782303,
    "nbars": 15,
-   "yes_bid": 0.58,
-   "yes_ask": 0.6,
-   "no_bid": 0.4,
-   "no_ask": 0.42,
-   "spread": 0.020000000000000018,
-   "no_bid_eff": 0.4,
-   "no_ask_eff": 0.42,
-   "price_label": "DOWN \u2014 NO costs 42\u00a2",
-   "price_yes": "YES 58\u00a2 / 60\u00a2",
-   "price_no": "NO 40\u00a2 / 42\u00a2",
-   "open_interest": 38442.22,
-   "mins_left": 2.503833603858948,
+   "yes_bid": 0.0,
+   "yes_ask": 0.001,
+   "no_bid": 0.999,
+   "no_ask": 1.0,
+   "spread": 0.001,
+   "no_bid_eff": 0.999,
+   "no_ask_eff": 1.0,
+   "price_label": "DOWN \u2014 NO costs 100\u00a2",
+   "price_yes": "YES 0\u00a2 / 0\u00a2",
+   "price_no": "NO 100\u00a2 / 100\u00a2",
+   "open_interest": 48978.82,
+   "mins_left": 0.007446610927581787,
    "call": "DOWN",
    "weak": false,
-   "conviction": "coin_flip",
-   "reason": "CALL DOWN \u2014 COIN FLIP \u2014 driven by gap $0.01 = 0.1x per-minute vol and 6% of the 3-min noise band; price action 1\u20132 DOWN (agrees with the gap); RSI 54 (neutral). COIN FLIP \u2014 the gap is INSIDE the noise band ($0.01 vs a $0.19 band over the 3 min still to run). This is a direction because a call is made every round, not because the read is good. Near 50/50 \u2014 size it that way or skip it. Market disagrees: YES mid 59\u00a2 prices the other side. BUY \u2014 42\u00a2 to win 58\u00a2, edge +11.2 pts (52% us vs 41% market). FLIP COMING \u2014 1,158-lot YES order just stacked.",
+   "conviction": "strong",
+   "reason": "CALL DOWN \u2014 STRONG \u2014 driven by gap $0.21 = 1.5x per-minute vol and 361% of the 0-min noise band; price action 1\u20132 DOWN (agrees with the gap); RSI 45 (neutral). Downgraded from a clean read by: an unfilled bullish AND bearish gap are both open (chop); fear & greed is at 13 (Extreme Fear) \u2014 an extreme reading tilting against a DOWN move. PRICED OUT \u2014 costs 100\u00a2 to win 0\u00a2. Call stands; don't buy it here. FLIP COMING \u2014 3,878-lot YES print (184x median), YES takers 21,534 vs 6,857.",
    "signals": [
     {
      "name": "FVG",
      "lean": "down",
-     "text": "bearish, 72.83\u201372.89, unfilled, price inside it \u2014 leans DOWN if it holds"
+     "text": "bearish, 72.67\u201372.78, unfilled, price inside it \u2014 leans DOWN if it holds"
     },
     {
      "name": "Sweep",
@@ -487,43 +481,35 @@
     {
      "name": "Momentum",
      "lean": "down",
-     "text": "-0.08 over 3m, +0.03 over 5m, decelerating"
+     "text": "-0.21 over 3m, -0.28 over 5m, accelerating"
     },
     {
      "name": "S/R",
      "lean": null,
-     "text": "round high 73.20 (+0.33 away), low 72.60 (-0.27 away), target line -0.01 away (the line is a magnet)"
+     "text": "round high 73.20 (+0.53 away), low 72.55 (-0.13 away), target line -0.21 away (the line is a magnet)"
     }
    ],
    "signal_lean": "down",
    "gap_dir": "down",
-   "entry_price": 0.42,
-   "breakeven": 0.44,
-   "fee": 0.02,
+   "entry_price": 1.0,
+   "breakeven": 1.0,
+   "fee": 0.0,
    "fvgs": {
     "bullish": [
      {
       "dir": "bullish",
-      "lo": 72.67,
-      "hi": 72.945,
-      "idx": 3,
-      "age_min": 12,
-      "inside": true
-     },
-     {
-      "dir": "bullish",
       "lo": 72.92,
       "hi": 72.98,
-      "idx": 7,
-      "age_min": 8,
+      "idx": 5,
+      "age_min": 10,
       "inside": false
      },
      {
       "dir": "bullish",
       "lo": 72.925,
       "hi": 72.965,
-      "idx": 8,
-      "age_min": 7,
+      "idx": 6,
+      "age_min": 9,
       "inside": false
      }
     ],
@@ -532,16 +518,32 @@
       "dir": "bearish",
       "lo": 72.885,
       "hi": 72.965,
-      "idx": 10,
-      "age_min": 5,
+      "idx": 8,
+      "age_min": 7,
       "inside": false
      },
      {
       "dir": "bearish",
       "lo": 72.83,
       "hi": 72.885,
-      "idx": 13,
-      "age_min": 2,
+      "idx": 11,
+      "age_min": 4,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 72.825,
+      "hi": 72.885,
+      "idx": 14,
+      "age_min": 1,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 72.675,
+      "hi": 72.785,
+      "idx": 15,
+      "age_min": 0,
       "inside": true
      }
     ]
@@ -552,19 +554,31 @@
     "big": [
      {
       "side": "NO",
-      "price": 0.35,
-      "size": 1577.55,
-      "x_median": 3.093235294117647
+      "price": 0.71,
+      "size": 5579.0,
+      "x_median": 11.158
+     },
+     {
+      "side": "NO",
+      "price": 0.021,
+      "size": 4726.76,
+      "x_median": 9.453520000000001
+     },
+     {
+      "side": "NO",
+      "price": 0.041,
+      "size": 2406.0,
+      "x_median": 4.812
      }
     ],
     "changes": [
-     "a 1,158-lot YES order appeared at 1\u00a2",
-     "a 756-lot YES order appeared at 1\u00a2",
-     "a 243-lot YES order appeared at 10\u00a2"
+     "a 5,579-lot NO order appeared at 71\u00a2",
+     "a 1,782-lot NO order appeared at 93\u00a2",
+     "a 1,755-lot NO order appeared at 99\u00a2"
     ],
     "depth": {
-     "yes": 193621.13999999984,
-     "no": 192092.23999999985
+     "yes": 0,
+     "no": 203204.41999999993
     }
    },
    "whale_trades": {
@@ -572,114 +586,114 @@
     "n": 200,
     "big": [
      {
-      "size": 500.0,
+      "size": 3877.92,
       "side": "YES",
-      "price": 0.56,
+      "price": 0.001,
       "block": false,
-      "ts": 1794673641.0
+      "ts": 1794673794.0
      },
      {
-      "size": 500.0,
-      "side": "NO",
-      "price": 0.46,
+      "size": 3022.0,
+      "side": "YES",
+      "price": 0.001,
       "block": false,
-      "ts": 1794673637.0
+      "ts": 1794673794.0
      },
      {
-      "size": 500.0,
-      "side": "NO",
-      "price": 0.49,
+      "size": 1323.22,
+      "side": "YES",
+      "price": 0.001,
       "block": false,
-      "ts": 1794673620.0
+      "ts": 1794673744.0
      }
     ],
-    "yes_vol": 3263.79,
-    "no_vol": 5549.62,
-    "median": 10.94
+    "yes_vol": 21533.850000000002,
+    "no_vol": 6856.78,
+    "median": 21.09
    },
    "spot_whales": {
     "available": true,
     "n": 200,
     "big": [
      {
-      "size": 213.15364396,
-      "price": 72.77,
-      "dir": "sell",
-      "ts": 1794673597.0,
-      "x_median": 525.3358674553562
-     },
-     {
-      "size": 81.02936153,
-      "price": 72.88,
+      "size": 239.07463272,
+      "price": 72.51,
       "dir": "buy",
-      "ts": 1794673625.0,
-      "x_median": 199.7039747380738
+      "ts": 1794673786.0,
+      "x_median": 34.29341458463531
      },
      {
-      "size": 64.78102346,
-      "price": 72.85,
+      "size": 168.76711739,
+      "price": 72.55,
+      "dir": "buy",
+      "ts": 1794673786.0,
+      "x_median": 24.208343056151094
+     },
+     {
+      "size": 134.877379,
+      "price": 72.44,
       "dir": "sell",
-      "ts": 1794673583.0,
-      "x_median": 159.65851918717945
+      "ts": 1794673788.0,
+      "x_median": 19.347121120763898
      }
     ],
-    "median": 0.40574736499999997,
-    "buy_vol": 673.3503398800001,
-    "sell_vol": 563.48935104
+    "median": 6.97144439,
+    "buy_vol": 1357.3671370199997,
+    "sell_vol": 1993.43822579
    },
    "flip": {
     "available": true,
     "on_pace": false,
-    "rate": -0.0266666666666661,
-    "need": 0.012000000000000455,
-    "mins_left": 2.503833603858948
+    "rate": -0.07000000000000266,
+    "need": 0.20700000000000784,
+    "mins_left": 0.007446610927581787
    },
    "scalp": {
-    "side": "NO",
-    "price": 0.42,
-    "bid": 0.4,
-    "target": 0.47,
-    "payoff": 2.380952380952381,
-    "cheap": false,
+    "side": "YES",
+    "price": 0.001,
+    "bid": 0.0,
+    "target": 0.05,
+    "payoff": 1000.0,
+    "cheap": true,
     "move_cents": 5,
-    "why": "price action leans DOWN"
+    "why": "price action leans DOWN (other side unquoted)"
    },
-   "rsi": 54.09548839246642,
+   "rsi": 44.90751058613763,
    "rsi_state": "neutral",
    "momentum_multi": {
-    "m3": -0.0799999999999983,
-    "m5": 0.025000000000005684,
-    "m15": 0.14500000000001023,
-    "prev3": 0.01999999999999602,
+    "m3": -0.21000000000000796,
+    "m5": -0.2750000000000057,
+    "m15": -0.1700000000000017,
+    "prev3": -0.045000000000001705,
     "decelerating": false,
-    "rate_per_min": -0.0266666666666661
+    "rate_per_min": -0.07000000000000266
    },
    "fvg_distance": {
     "above": {
      "dir": "bearish",
-     "lo": 72.885,
-     "hi": 72.965,
-     "idx": 10,
-     "age_min": 5,
+     "lo": 72.825,
+     "hi": 72.885,
+     "idx": 14,
+     "age_min": 1,
      "inside": false,
-     "distance": 0.015000000000000568
+     "distance": 0.15000000000000568
     },
     "below": null,
     "inside": {
      "dir": "bearish",
-     "lo": 72.83,
-     "hi": 72.885,
-     "idx": 13,
-     "age_min": 2,
+     "lo": 72.675,
+     "hi": 72.785,
+     "idx": 15,
+     "age_min": 0,
      "inside": true,
      "distance": 0.0
     }
    },
-   "dist_vol": 0.08590099702936671,
+   "dist_vol": 1.5324973564174902,
    "skew": {
-    "yes_mid": 0.59,
-    "market_dir": "up",
-    "edge": 17.999999999999993
+    "yes_mid": null,
+    "market_dir": null,
+    "edge": 0.0
    },
    "history": {
     "n": 6,
@@ -691,72 +705,71 @@
    },
    "reversal": {
     "flag": true,
-    "trigger": "whale_order",
-    "text": "FLIP COMING \u2014 1,158-lot YES order just stacked.",
+    "trigger": "whale_trade",
+    "text": "FLIP COMING \u2014 3,878-lot YES print (184x median), YES takers 21,534 vs 6,857.",
     "why": [
-     "1,158-lot YES order just stacked"
+     "3,878-lot YES print (184x median), YES takers 21,534 vs 6,857"
     ]
    },
    "reversal_flag": true,
-   "reversal_text": "FLIP COMING \u2014 1,158-lot YES order just stacked.",
-   "reversal_trigger": "whale_order",
+   "reversal_text": "FLIP COMING \u2014 3,878-lot YES print (184x median), YES takers 21,534 vs 6,857.",
+   "reversal_trigger": "whale_trade",
    "reversal_why": [
-    "1,158-lot YES order just stacked"
+    "3,878-lot YES print (184x median), YES takers 21,534 vs 6,857"
    ],
    "reversal_technical": {
     "flag": true,
     "reasons": [
-     "unfilled bearish FVG 72.89\u201372.97 above price, 0.02 away (0.1x/min vol) \u2014 acts as a magnet back the other way",
-     "price is sitting on the target line ($0.01 away, under half a minute's vol) \u2014 it can flip either side on one print"
+     "unfilled bearish FVG 72.83\u201372.89 above price, 0.15 away (1.1x/min vol) \u2014 acts as a magnet back the other way"
     ],
-    "level": "high",
+    "level": "watch",
     "direction": "up",
-    "flip_price": 72.92500000000001,
-    "eta_min": 2.0625000000002998,
-    "text": "PROJECTED FLIP INCOMING \u2014 the move is DOWN, the signals point to a flip UP: unfilled bearish FVG 72.89\u201372.97 above price, 0.02 away (0.1x/min vol) \u2014 acts as a magnet back the other way; price is sitting on the target line ($0.01 away, under half a minute's vol) \u2014 it can flip either side on one print. It would show around 72.93 (~2 min at the current rate)."
+    "flip_price": 72.855,
+    "eta_min": 2.571428571428571,
+    "text": "PROJECTED FLIP INCOMING \u2014 the move is DOWN, the signals point to a flip UP: unfilled bearish FVG 72.83\u201372.89 above price, 0.15 away (1.1x/min vol) \u2014 acts as a magnet back the other way. It would show around 72.86 (~3 min at the current rate)."
    },
    "drivers": [
-    "gap $0.01 = 0.1x per-minute vol and 6% of the 3-min noise band",
+    "gap $0.21 = 1.5x per-minute vol and 361% of the 0-min noise band",
     "price action 1\u20132 DOWN (agrees with the gap)",
-    "RSI 54 (neutral)",
-    "momentum -0.08/3m, +0.15/15m",
+    "RSI 45 (neutral)",
+    "momentum -0.21/3m, -0.17/15m",
     "Fear & Greed 13 (Extreme Fear), -7 vs yesterday \u2014 an extreme reading, contrarian tilt UP",
     "this asset's DOWN setups: 3W-3L"
    ],
    "gate_k": 1.15,
-   "quote_age": 0.34888505935668945,
-   "bars_note": "61 live 1-min bars this session",
+   "quote_age": 0.5442829132080078,
+   "bars_note": "60 live 1-min bars this session",
    "close_time": "2026-11-14T16:30:00Z",
-   "secs_left": 150.23001623153687,
+   "secs_left": 0.4467966556549072,
    "phase": "called",
    "expected": {
-    "dir": "UP",
-    "text": "Expected: UP \u2014 thin \u2014 price action leans DOWN; spot is DOWN of the line by 0.1x per-minute vol; 3-min momentum -0.08 \u2014 buy YES at 60\u00a2",
+    "dir": "DOWN",
+    "text": "Expected: DOWN \u2014 FIRM \u2014 spot is DOWN of the line by 1.5x per-minute vol; price action leans DOWN; 3-min momentum -0.21 \u2014 buy NO at 100\u00a2",
     "votes": {
-     "up": 3.3999999999999995,
-     "down": 3.142950498514683
+     "up": 1.3,
+     "down": 5.266248678208745
     },
     "why": [
+     "spot is DOWN of the line by 1.5x per-minute vol",
      "price action leans DOWN",
-     "spot is DOWN of the line by 0.1x per-minute vol",
-     "3-min momentum -0.08",
-     "unfilled FVG 0.1x vol UP of spot (magnet)",
+     "3-min momentum -0.21",
      "fear & greed 13 (Extreme Fear)",
-     "book is priced UP (YES mid 59\u00a2)",
-     "5-min momentum +0.03",
-     "15-min momentum +0.15"
+     "5-min momentum -0.28",
+     "15-min momentum -0.17",
+     "unfilled FVG 1.1x vol UP of spot (magnet)",
+     "RSI 45 soft"
     ],
     "drivers": [
+     "spot is DOWN of the line by 1.5x per-minute vol",
      "price action leans DOWN",
-     "spot is DOWN of the line by 0.1x per-minute vol",
-     "3-min momentum -0.08"
+     "3-min momentum -0.21"
     ],
-    "strength": 0.5196432405795878,
-    "net": 0.25704950148531625,
-    "firm": false,
-    "entry_price": 0.6,
-    "entry_cents": 60,
-    "side": "YES"
+    "strength": 0.8020178546824949,
+    "net": 3.9662486782087454,
+    "firm": true,
+    "entry_price": 1.0,
+    "entry_cents": 100,
+    "side": "NO"
    },
    "fired_call": "NO CALL",
    "fired_mark": 6,
@@ -776,16 +789,16 @@
    "win_prob": null,
    "win_prob_model": null,
    "win_prob_market": null,
-   "lean_entry_price": 0.6,
-   "lean_entry_cents": 60,
-   "call_entry_cents": 42,
-   "no_edge": false,
-   "no_edge_price": null,
-   "edge_points": 11.164672820229605,
-   "cand_model_p": 0.5216467282022961,
-   "cand_market_p": 0.41000000000000003,
-   "tradeable": true,
-   "side_ask": 0.42,
+   "lean_entry_price": 1.0,
+   "lean_entry_cents": 100,
+   "call_entry_cents": 100,
+   "no_edge": true,
+   "no_edge_price": 1.0,
+   "edge_points": null,
+   "cand_model_p": 1.0,
+   "cand_market_p": null,
+   "tradeable": false,
+   "side_ask": 1.0,
    "max_call_price": 0.65,
    "min_edge_points": 3.0,
    "fear_greed": {
@@ -805,47 +818,47 @@
    "confidence": "UNKNOWN",
    "confidence_label": "NO READ",
    "confidence_note": "not enough data to price the call right now",
-   "elapsed_min": 12.501464001337688,
-   "bars": "61 live 1-min bars this session"
+   "elapsed_min": 15.000893346468608,
+   "bars": "60 live 1-min bars this session"
   },
   "eth": {
    "label": "ETH",
    "dec": 2,
-   "spot": 1826.835,
+   "spot": 1820.28,
    "spot_source": "Coinbase spot",
-   "spot_age": 3.0517578125e-05,
+   "spot_age": 2.9802322387695312e-05,
    "closed": false,
-   "tier": "coin_flip",
-   "tier_label": "COIN FLIP",
+   "tier": "strong",
+   "tier_label": "STRONG",
    "asset": "eth",
    "ticker": "KXETH15M-26NOV141130-30",
    "target": 1826.54,
-   "gap": 0.29500000000007276,
-   "gap_pct": 0.016148146931719218,
-   "sigma": 2.9520139264952996,
-   "band": 3.96393061274094,
+   "gap": -6.259999999999991,
+   "gap_pct": -0.3439031357813079,
+   "sigma": 2.626253901578322,
+   "band": 1.1161579081707869,
    "nbars": 15,
-   "yes_bid": 0.54,
-   "yes_ask": 0.55,
-   "no_bid": 0.45,
-   "no_ask": 0.46,
-   "spread": 0.010000000000000009,
-   "no_bid_eff": 0.45,
-   "no_ask_eff": 0.46,
-   "price_label": "UP \u2014 YES costs 55\u00a2",
-   "price_yes": "YES 54\u00a2 / 55\u00a2",
-   "price_no": "NO 45\u00a2 / 46\u00a2",
-   "open_interest": 46087.57,
-   "mins_left": 2.4956141074498492,
-   "call": "UP",
+   "yes_bid": 0.0,
+   "yes_ask": 0.001,
+   "no_bid": 0.999,
+   "no_ask": 1.0,
+   "spread": 0.001,
+   "no_bid_eff": 0.999,
+   "no_ask_eff": 1.0,
+   "price_label": "DOWN \u2014 NO costs 100\u00a2",
+   "price_yes": "YES 0\u00a2 / 0\u00a2",
+   "price_no": "NO 100\u00a2 / 100\u00a2",
+   "open_interest": 100936.37,
+   "mins_left": 0.0,
+   "call": "DOWN",
    "weak": false,
-   "conviction": "coin_flip",
-   "reason": "CALL UP \u2014 COIN FLIP \u2014 driven by gap $0.30 = 0.1x per-minute vol and 7% of the 2-min noise band; price action 1\u20132 DOWN (does not confirm the gap); RSI 62 (hot). COIN FLIP \u2014 the gap is INSIDE the noise band ($0.30 vs a $3.96 band over the 2 min still to run). This is a direction because a call is made every round, not because the read is good. Near 50/50 \u2014 size it that way or skip it. PRICED OUT \u2014 edge -2.0 pts (53% us vs 55% market). Call stands; don't buy it here.",
+   "conviction": "strong",
+   "reason": "CALL DOWN \u2014 STRONG \u2014 driven by gap $6.26 = 2.4x per-minute vol and 561% of the 0-min noise band; price action 1\u20132 DOWN (agrees with the gap); RSI 37 (cold). Downgraded from a clean read by: fear & greed is at 13 (Extreme Fear) \u2014 an extreme reading tilting against a DOWN move. History note: only 1 settled DOWN calls on ETH so far \u2014 too few to lean on. PRICED OUT \u2014 costs 100\u00a2 to win 0\u00a2. Call stands; don't buy it here. FLIP COMING \u2014 20,000-lot YES print (398x median), YES takers 85,288 vs 24,460.",
    "signals": [
     {
      "name": "FVG",
      "lean": "down",
-     "text": "bearish, 1,826.84\u20131,827.97, unfilled, price inside it \u2014 leans DOWN if it holds"
+     "text": "bearish, 1,820.28\u20131,824.23, unfilled, price inside it \u2014 leans DOWN if it holds"
     },
     {
      "name": "Sweep",
@@ -860,68 +873,95 @@
     {
      "name": "Momentum",
      "lean": "down",
-     "text": "-2.93 over 3m, -1.39 over 5m, accelerating"
+     "text": "-5.28 over 3m, -7.70 over 5m, accelerating"
     },
     {
      "name": "S/R",
      "lean": null,
-     "text": "round high 1,834.99 (+8.16 away), low 1,816.76 (-10.08 away), target line +0.30 away (the line is a magnet)"
+     "text": "round high 1,834.99 (+14.71 away), low 1,819.03 (-1.25 away), target line -6.26 away (the line is a magnet)"
     }
    ],
    "signal_lean": "down",
-   "gap_dir": "up",
-   "entry_price": 0.55,
-   "breakeven": 0.5700000000000001,
-   "fee": 0.02,
+   "gap_dir": "down",
+   "entry_price": 1.0,
+   "breakeven": 1.0,
+   "fee": 0.0,
    "fvgs": {
-    "bullish": [
-     {
-      "dir": "bullish",
-      "lo": 1820.375,
-      "hi": 1825.215,
-      "idx": 3,
-      "age_min": 12,
-      "inside": false
-     }
-    ],
+    "bullish": [],
     "bearish": [
      {
       "dir": "bearish",
       "lo": 1827.98,
       "hi": 1829.385,
-      "idx": 13,
-      "age_min": 2,
+      "idx": 10,
+      "age_min": 5,
       "inside": false
      },
      {
       "dir": "bearish",
       "lo": 1826.835,
       "hi": 1827.975,
+      "idx": 12,
+      "age_min": 3,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 1824.825,
+      "hi": 1828.165,
+      "idx": 13,
+      "age_min": 2,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 1824.22,
+      "hi": 1825.555,
+      "idx": 14,
+      "age_min": 1,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 1820.28,
+      "hi": 1824.23,
       "idx": 15,
       "age_min": 0,
       "inside": true
      }
     ]
    },
-   "chop": true,
+   "chop": false,
    "whale_orders": {
     "available": true,
     "big": [
      {
       "side": "NO",
-      "price": 0.42,
-      "size": 2088.0,
-      "x_median": 4.175164967006599
+      "price": 0.74,
+      "size": 10465.0,
+      "x_median": 20.93
+     },
+     {
+      "side": "NO",
+      "price": 0.021,
+      "size": 4692.76,
+      "x_median": 9.38552
+     },
+     {
+      "side": "NO",
+      "price": 0.93,
+      "size": 3571.0,
+      "x_median": 7.142
      }
     ],
     "changes": [
-     "a 2,189-lot YES order appeared at 11\u00a2",
-     "a 1,008-lot YES order appeared at 12\u00a2",
-     "a 993-lot YES order appeared at 13\u00a2"
+     "a 2,306-lot NO order appeared at 1\u00a2",
+     "a 537-lot NO order appeared at 57\u00a2",
+     "a 10,465-lot NO order appeared at 74\u00a2"
     ],
     "depth": {
-     "yes": 249872.38999999984,
-     "no": 247473.4900000001
+     "yes": 0,
+     "no": 204139.65000000005
     }
    },
    "whale_trades": {
@@ -929,196 +969,190 @@
     "n": 200,
     "big": [
      {
-      "size": 500.0,
-      "side": "NO",
-      "price": 0.5,
-      "block": false,
-      "ts": 1794673648.0
-     },
-     {
-      "size": 415.75,
-      "side": "NO",
-      "price": 0.49,
-      "block": false,
-      "ts": 1794673648.0
-     },
-     {
-      "size": 325.9,
+      "size": 20000.0,
       "side": "YES",
-      "price": 0.48,
+      "price": 0.001,
       "block": false,
-      "ts": 1794673647.0
+      "ts": 1794673790.0
+     },
+     {
+      "size": 9347.04,
+      "side": "YES",
+      "price": 0.001,
+      "block": false,
+      "ts": 1794673744.0
+     },
+     {
+      "size": 6840.02,
+      "side": "YES",
+      "price": 0.001,
+      "block": false,
+      "ts": 1794673790.0
      }
     ],
-    "yes_vol": 4394.36,
-    "no_vol": 3810.54,
-    "median": 7.0
+    "yes_vol": 85287.51000000001,
+    "no_vol": 24459.829999999994,
+    "median": 50.245000000000005
    },
    "spot_whales": {
     "available": true,
     "n": 200,
     "big": [
      {
-      "size": 19.0,
-      "price": 1827.2,
-      "dir": "buy",
-      "ts": 1794673640.0,
-      "x_median": 350.66093588266295
+      "size": 9.1,
+      "price": 1820.63,
+      "dir": "sell",
+      "ts": 1794673789.0,
+      "x_median": 167.14035344858306
      },
      {
-      "size": 8.72443372,
-      "price": 1826.45,
+      "size": 5.46492882,
+      "price": 1818.94,
       "dir": "sell",
-      "ts": 1794673643.0,
-      "x_median": 161.01674175270855
+      "ts": 1794673796.0,
+      "x_median": 100.37474006001625
      },
      {
-      "size": 3.99919904,
-      "price": 1826.25,
+      "size": 5.20093341,
+      "price": 1820.67,
       "dir": "sell",
-      "ts": 1794673637.0,
-      "x_median": 73.80857253407616
+      "ts": 1794673789.0,
+      "x_median": 95.5259174076862
      }
     ],
-    "median": 0.054183395,
-    "buy_vol": 52.20480801000001,
-    "sell_vol": 49.22836977000002
+    "median": 0.054445259999999995,
+    "buy_vol": 36.78837351000001,
+    "sell_vol": 51.89967238999996
    },
    "flip": {
     "available": true,
-    "on_pace": true,
-    "eta": 0.3020477815700338,
-    "rate": -0.9766666666666879,
-    "need": -0.29500000000007276,
-    "mins_left": 2.4956141074498492
+    "on_pace": false,
+    "rate": -1.7583333333333637,
+    "need": 6.259999999999991,
+    "mins_left": 0.0
    },
    "scalp": {
-    "side": "NO",
-    "price": 0.46,
-    "bid": 0.45,
-    "target": 0.51,
-    "payoff": 2.1739130434782608,
-    "cheap": false,
+    "side": "YES",
+    "price": 0.001,
+    "bid": 0.0,
+    "target": 0.05,
+    "payoff": 1000.0,
+    "cheap": true,
     "move_cents": 5,
-    "why": "price action leans DOWN"
+    "why": "price action leans DOWN (other side unquoted)"
    },
-   "rsi": 62.43765349267049,
-   "rsi_state": "hot",
+   "rsi": 36.74432808662752,
+   "rsi_state": "cold",
    "momentum_multi": {
-    "m3": -2.9300000000000637,
-    "m5": -1.3899999999998727,
-    "m15": 7.660000000000082,
-    "prev3": 0.6950000000001637,
+    "m3": -5.275000000000091,
+    "m5": -7.7000000000000455,
+    "m15": -8.110000000000127,
+    "prev3": -4.210000000000036,
     "decelerating": false,
-    "rate_per_min": -0.9766666666666879
+    "rate_per_min": -1.7583333333333637
    },
    "fvg_distance": {
     "above": {
      "dir": "bearish",
-     "lo": 1827.98,
-     "hi": 1829.385,
-     "idx": 13,
-     "age_min": 2,
+     "lo": 1824.22,
+     "hi": 1825.555,
+     "idx": 14,
+     "age_min": 1,
      "inside": false,
-     "distance": 1.1449999999999818
+     "distance": 3.9400000000000546
     },
-    "below": {
-     "dir": "bullish",
-     "lo": 1820.375,
-     "hi": 1825.215,
-     "idx": 3,
-     "age_min": 12,
-     "inside": false,
-     "distance": 1.6200000000001182
-    },
+    "below": null,
     "inside": {
      "dir": "bearish",
-     "lo": 1826.835,
-     "hi": 1827.975,
+     "lo": 1820.28,
+     "hi": 1824.23,
      "idx": 15,
      "age_min": 0,
      "inside": true,
      "distance": 0.0
     }
    },
-   "dist_vol": 0.09993177787961986,
+   "dist_vol": 2.383623303229694,
    "skew": {
-    "yes_mid": 0.545,
-    "market_dir": "up",
-    "edge": 9.000000000000007
+    "yes_mid": null,
+    "market_dir": null,
+    "edge": 0.0
    },
    "history": {
-    "n": 0,
-    "w": 0,
+    "n": 1,
+    "w": 1,
     "l": 0,
-    "wr": null,
+    "wr": 1.0,
     "small": true,
-    "direction": "up"
+    "direction": "down"
    },
    "reversal": {
-    "flag": false,
-    "text": "",
-    "why": [],
-    "trigger": null
+    "flag": true,
+    "trigger": "whale_trade",
+    "text": "FLIP COMING \u2014 20,000-lot YES print (398x median), YES takers 85,288 vs 24,460.",
+    "why": [
+     "20,000-lot YES print (398x median), YES takers 85,288 vs 24,460"
+    ]
    },
-   "reversal_flag": false,
-   "reversal_text": "",
-   "reversal_trigger": null,
-   "reversal_why": [],
+   "reversal_flag": true,
+   "reversal_text": "FLIP COMING \u2014 20,000-lot YES print (398x median), YES takers 85,288 vs 24,460.",
+   "reversal_trigger": "whale_trade",
+   "reversal_why": [
+    "20,000-lot YES print (398x median), YES takers 85,288 vs 24,460"
+   ],
    "reversal_technical": {
     "flag": true,
     "reasons": [
-     "unfilled bullish FVG 1,820.38\u20131,825.21 below price, 1.62 away (0.5x/min vol) \u2014 acts as a magnet back the other way",
-     "price is sitting on the target line ($0.30 away, under half a minute's vol) \u2014 it can flip either side on one print"
+     "unfilled bearish FVG 1,824.22\u20131,825.56 above price, 3.94 away (1.5x/min vol) \u2014 acts as a magnet back the other way"
     ],
-    "level": "high",
-    "direction": "down",
-    "flip_price": 1822.795,
-    "eta_min": 4.136518771330931,
-    "text": "PROJECTED FLIP INCOMING \u2014 the move is UP, the signals point to a flip DOWN: unfilled bullish FVG 1,820.38\u20131,825.21 below price, 1.62 away (0.5x/min vol) \u2014 acts as a magnet back the other way; price is sitting on the target line ($0.30 away, under half a minute's vol) \u2014 it can flip either side on one print. It would show around 1,822.80 (~4 min at the current rate)."
+    "level": "watch",
+    "direction": "up",
+    "flip_price": 1824.8875,
+    "eta_min": 2.6203791469194275,
+    "text": "PROJECTED FLIP INCOMING \u2014 the move is DOWN, the signals point to a flip UP: unfilled bearish FVG 1,824.22\u20131,825.56 above price, 3.94 away (1.5x/min vol) \u2014 acts as a magnet back the other way. It would show around 1,824.89 (~3 min at the current rate)."
    },
    "drivers": [
-    "gap $0.30 = 0.1x per-minute vol and 7% of the 2-min noise band",
-    "price action 1\u20132 DOWN (does not confirm the gap)",
-    "RSI 62 (hot)",
-    "momentum -2.93/3m, +7.66/15m",
-    "Fear & Greed 13 (Extreme Fear), -7 vs yesterday \u2014 an extreme reading, contrarian tilt UP"
+    "gap $6.26 = 2.4x per-minute vol and 561% of the 0-min noise band",
+    "price action 1\u20132 DOWN (agrees with the gap)",
+    "RSI 37 (cold)",
+    "momentum -5.28/3m, -8.11/15m",
+    "Fear & Greed 13 (Extreme Fear), -7 vs yesterday \u2014 an extreme reading, contrarian tilt UP",
+    "this asset's DOWN setups: 1W-0L (small sample \u2014 weighted lightly)"
    ],
    "gate_k": 1.15,
-   "quote_age": 0.4728543758392334,
+   "quote_age": 0.8979213237762451,
    "bars_note": "61 live 1-min bars this session",
    "close_time": "2026-11-14T16:30:00Z",
-   "secs_left": 149.73684644699097,
+   "secs_left": 0.0,
    "phase": "called",
    "expected": {
-    "dir": "UP",
-    "text": "Expected: UP \u2014 FIRM \u2014 price action leans DOWN; spot is UP of the line by 0.1x per-minute vol; 3-min momentum -2.93 \u2014 buy YES at 55\u00a2",
+    "dir": "DOWN",
+    "text": "Expected: DOWN \u2014 FIRM \u2014 spot is DOWN of the line by 2.4x per-minute vol; price action leans DOWN; 3-min momentum -5.28 \u2014 buy NO at 100\u00a2",
     "votes": {
-     "up": 4.34996588893981,
-     "down": 2.6
+     "up": 1.3,
+     "down": 5.691811651614848
     },
     "why": [
+     "spot is DOWN of the line by 2.4x per-minute vol",
      "price action leans DOWN",
-     "spot is UP of the line by 0.1x per-minute vol",
-     "3-min momentum -2.93",
-     "unfilled FVG 0.4x vol UP of spot (magnet)",
+     "3-min momentum -5.28",
      "fear & greed 13 (Extreme Fear)",
-     "book is priced UP (YES mid 55\u00a2)",
-     "5-min momentum -1.39",
-     "15-min momentum +7.66",
-     "RSI 62 firm"
+     "5-min momentum -7.70",
+     "15-min momentum -8.11",
+     "unfilled FVG 1.5x vol UP of spot (magnet)",
+     "RSI 37 soft"
     ],
     "drivers": [
+     "spot is DOWN of the line by 2.4x per-minute vol",
      "price action leans DOWN",
-     "spot is UP of the line by 0.1x per-minute vol",
-     "3-min momentum -2.93"
+     "3-min momentum -5.28"
     ],
-    "strength": 0.625897444455426,
-    "net": 1.7499658889398098,
+    "strength": 0.81406821797041,
+    "net": 4.391811651614848,
     "firm": true,
-    "entry_price": 0.55,
-    "entry_cents": 55,
-    "side": "YES"
+    "entry_price": 1.0,
+    "entry_cents": 100,
+    "side": "NO"
    },
    "fired_call": "NO CALL",
    "fired_mark": 6,
@@ -1137,16 +1171,16 @@
    "win_prob": null,
    "win_prob_model": null,
    "win_prob_market": null,
-   "lean_entry_price": 0.55,
-   "lean_entry_cents": 55,
-   "call_entry_cents": 55,
+   "lean_entry_price": 1.0,
+   "lean_entry_cents": 100,
+   "call_entry_cents": 100,
    "no_edge": true,
-   "no_edge_price": 0.55,
-   "edge_points": -1.9780562357938236,
-   "cand_model_p": 0.5252194376420618,
-   "cand_market_p": 0.545,
+   "no_edge_price": 1.0,
+   "edge_points": null,
+   "cand_model_p": 1.0,
+   "cand_market_p": null,
    "tradeable": false,
-   "side_ask": 0.55,
+   "side_ask": 1.0,
    "max_call_price": 0.65,
    "min_edge_points": 3.0,
    "fear_greed": {
@@ -1166,90 +1200,90 @@
    "confidence": "UNKNOWN",
    "confidence_label": "NO READ",
    "confidence_note": "not enough data to price the call right now",
-   "elapsed_min": 12.510043783982594,
+   "elapsed_min": 15.01668112675349,
    "bars": "61 live 1-min bars this session"
   },
   "xrp": {
    "label": "XRP",
    "dec": 4,
-   "spot": 0.9609,
+   "spot": 0.9587,
    "spot_source": "Coinbase spot",
-   "spot_age": 5.555152893066406e-05,
+   "spot_age": 3.838539123535156e-05,
    "closed": false,
-   "tier": "coin_flip",
-   "tier_label": "COIN FLIP",
+   "tier": "strong",
+   "tier_label": "STRONG",
    "asset": "xrp",
    "ticker": "KXXRP15M-26NOV141130-30",
    "target": 0.9629,
-   "gap": -0.0020000000000000018,
-   "gap_pct": -0.20813820376730166,
-   "sigma": 0.0016079455491057042,
-   "band": 0.002156076584570624,
+   "gap": -0.0041999999999999815,
+   "gap_pct": -0.43809325127777005,
+   "sigma": 0.001523752677511073,
+   "band": 0.000647594887942206,
    "nbars": 15,
-   "yes_bid": 0.22,
-   "yes_ask": 0.25,
-   "no_bid": 0.75,
-   "no_ask": 0.78,
-   "spread": 0.03,
-   "no_bid_eff": 0.75,
-   "no_ask_eff": 0.78,
-   "price_label": "DOWN \u2014 NO costs 78\u00a2",
-   "price_yes": "YES 22\u00a2 / 25\u00a2",
-   "price_no": "NO 75\u00a2 / 78\u00a2",
-   "open_interest": 33881.91,
-   "mins_left": 2.4885584115982056,
+   "yes_bid": 0.0,
+   "yes_ask": 0.001,
+   "no_bid": 0.999,
+   "no_ask": 1.0,
+   "spread": 0.001,
+   "no_bid_eff": 0.999,
+   "no_ask_eff": 1.0,
+   "price_label": "DOWN \u2014 NO costs 100\u00a2",
+   "price_yes": "YES 0\u00a2 / 0\u00a2",
+   "price_no": "NO 100\u00a2 / 100\u00a2",
+   "open_interest": 60498.05,
+   "mins_left": 0.0,
    "call": "DOWN",
    "weak": false,
-   "conviction": "coin_flip",
-   "reason": "CALL DOWN \u2014 COIN FLIP \u2014 driven by gap $0.0020 = 1.2x per-minute vol and 93% of the 2-min noise band; price action 3\u20131 UP (does not confirm the gap); RSI 48 (neutral). COIN FLIP \u2014 the gap is INSIDE the noise band ($0.0020 vs a $0.0022 band over the 2 min still to run). This is a direction because a call is made every round, not because the read is good. Near 50/50 \u2014 size it that way or skip it. PRICED OUT \u2014 costs 78\u00a2 to win 22\u00a2; edge +2.0 pts (78% us vs 76% market). Call stands; don't buy it here. FLIP COMING \u2014 13,884-lot YES order just stacked.",
+   "conviction": "strong",
+   "reason": "CALL DOWN \u2014 STRONG \u2014 driven by gap $0.0042 = 2.8x per-minute vol and 649% of the 0-min noise band; price action 0\u20133 DOWN (agrees with the gap); RSI 39 (cold). Downgraded from a clean read by: an unfilled bullish AND bearish gap are both open (chop); fear & greed is at 13 (Extreme Fear) \u2014 an extreme reading tilting against a DOWN move. PRICED OUT \u2014 costs 100\u00a2 to win 0\u00a2. Call stands; don't buy it here.",
    "signals": [
     {
      "name": "FVG",
      "lean": "down",
-     "text": "bearish, 0.9602\u20130.9615, unfilled, price inside it \u2014 leans DOWN if it holds"
+     "text": "bearish, 0.9587\u20130.9597, unfilled, price inside it \u2014 leans DOWN if it holds"
     },
     {
      "name": "Sweep",
-     "lean": "up",
-     "text": "swept the low, closed back above at 0.9593, 2 bar(s) ago \u2014 bullish"
+     "lean": null,
+     "text": "no liquidity sweep in the last 15 min"
     },
     {
-     "name": "Trend",
-     "lean": "up",
-     "text": "3 bars up, still extending"
+     "name": "Exhaustion",
+     "lean": "down",
+     "text": "1 bars up, ranges contracting \u2014 exhaustion leans DOWN"
     },
     {
      "name": "Momentum",
-     "lean": "up",
-     "text": "+0.0012 over 3m, +0.0007 over 5m, accelerating"
+     "lean": "down",
+     "text": "-0.0018 over 3m, -0.0015 over 5m, accelerating"
     },
     {
      "name": "S/R",
      "lean": null,
-     "text": "round high 0.9650 (+0.0041 away), low 0.9588 (-0.0020 away), target line -0.0020 away (the line is a magnet)"
+     "text": "round high 0.9650 (+0.0063 away), low 0.9576 (-0.0011 away), target line -0.0042 away (the line is a magnet)"
     }
    ],
-   "signal_lean": "up",
+   "signal_lean": "down",
    "gap_dir": "down",
-   "entry_price": 0.78,
-   "breakeven": 0.8,
-   "fee": 0.02,
+   "entry_price": 1.0,
+   "breakeven": 1.0,
+   "fee": 0.0,
    "fvgs": {
     "bullish": [
      {
       "dir": "bullish",
       "lo": 0.96265,
       "hi": 0.9636,
-      "idx": 7,
-      "age_min": 8,
+      "idx": 4,
+      "age_min": 11,
       "inside": false
      },
      {
       "dir": "bullish",
       "lo": 0.9629,
       "hi": 0.96335,
-      "idx": 8,
-      "age_min": 7,
+      "idx": 5,
+      "age_min": 10,
       "inside": false
      }
     ],
@@ -1258,24 +1292,48 @@
       "dir": "bearish",
       "lo": 0.96195,
       "hi": 0.9636,
-      "idx": 9,
-      "age_min": 6,
+      "idx": 6,
+      "age_min": 9,
       "inside": false
      },
      {
       "dir": "bearish",
       "lo": 0.9602,
       "hi": 0.96335,
-      "idx": 10,
-      "age_min": 5,
-      "inside": true
+      "idx": 7,
+      "age_min": 8,
+      "inside": false
      },
      {
       "dir": "bearish",
       "lo": 0.9602,
       "hi": 0.9615,
+      "idx": 10,
+      "age_min": 5,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 0.96025,
+      "hi": 0.9609,
       "idx": 13,
       "age_min": 2,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 0.9581,
+      "hi": 0.9598,
+      "idx": 14,
+      "age_min": 1,
+      "inside": true
+     },
+     {
+      "dir": "bearish",
+      "lo": 0.9587,
+      "hi": 0.9597,
+      "idx": 15,
+      "age_min": 0,
       "inside": true
      }
     ]
@@ -1283,34 +1341,15 @@
    "chop": true,
    "whale_orders": {
     "available": true,
-    "big": [
-     {
-      "side": "YES",
-      "price": 0.021,
-      "size": 4734.0,
-      "x_median": 45.72146030519606
-     },
-     {
-      "side": "YES",
-      "price": 0.02,
-      "size": 3523.0,
-      "x_median": 34.025497392312154
-     },
-     {
-      "side": "YES",
-      "price": 0.03,
-      "size": 2507.33,
-      "x_median": 24.216051767432877
-     }
-    ],
+    "big": [],
     "changes": [
-     "a 13,884-lot YES order appeared at 0\u00a2",
-     "a 17,790-lot YES order appeared at 1\u00a2",
-     "a 8,759-lot YES order appeared at 1\u00a2"
+     "a 6,368-lot NO order left 0\u00a2",
+     "a 3,644-lot NO order left 0\u00a2",
+     "a 544-lot NO order left 0\u00a2"
     ],
     "depth": {
-     "yes": 191693.07000000018,
-     "no": 326252.18999999977
+     "yes": 0,
+     "no": 0
     }
    },
    "whale_trades": {
@@ -1318,115 +1357,114 @@
     "n": 200,
     "big": [
      {
-      "size": 400.0,
-      "side": "YES",
-      "price": 0.18,
-      "block": false,
-      "ts": 1794673645.0
-     },
-     {
-      "size": 400.0,
-      "side": "YES",
-      "price": 0.17,
-      "block": false,
-      "ts": 1794673645.0
-     },
-     {
-      "size": 400.0,
+      "size": 3157.52,
       "side": "NO",
-      "price": 0.18,
+      "price": 0.001,
       "block": false,
-      "ts": 1794673642.0
+      "ts": 1794673725.0
+     },
+     {
+      "size": 2290.05,
+      "side": "YES",
+      "price": 0.002,
+      "block": false,
+      "ts": 1794673729.0
+     },
+     {
+      "size": 1949.0,
+      "side": "NO",
+      "price": 0.001,
+      "block": false,
+      "ts": 1794673730.0
      }
     ],
-    "yes_vol": 6821.85,
-    "no_vol": 4278.2599999999975,
-    "median": 10.5
+    "yes_vol": 15376.219999999998,
+    "no_vol": 20883.550000000003,
+    "median": 45.8
    },
    "spot_whales": {
     "available": true,
     "n": 200,
     "big": [
      {
-      "size": 29788.402541,
-      "price": 0.9613,
-      "dir": "buy",
-      "ts": 1794673632.0,
-      "x_median": 1585.731428220698
-     },
-     {
-      "size": 4548.2,
-      "price": 0.9608,
+      "size": 5510.297221,
+      "price": 0.9577,
       "dir": "sell",
-      "ts": 1794673635.0,
-      "x_median": 242.1151544432991
+      "ts": 1794673793.0,
+      "x_median": 303.61769183491265
+     },
+     {
+      "size": 4696.747953,
+      "price": 0.9576,
+      "dir": "sell",
+      "ts": 1794673793.0,
+      "x_median": 258.79108066722756
      },
      {
       "size": 4548.2,
-      "price": 0.961,
-      "dir": "buy",
-      "ts": 1794673627.0,
-      "x_median": 242.1151544432991
+      "price": 0.9577,
+      "dir": "sell",
+      "ts": 1794673793.0,
+      "x_median": 250.60607996621707
      }
     ],
-    "median": 18.785276,
-    "buy_vol": 65287.81180200007,
-    "sell_vol": 31188.778469999994
+    "median": 18.148801499999998,
+    "buy_vol": 51424.06860700001,
+    "sell_vol": 32765.917343999998
    },
    "flip": {
     "available": true,
     "on_pace": false,
-    "eta": 5.000000000000092,
-    "rate": 0.00039999999999999297,
-    "need": 0.0020000000000000018,
-    "mins_left": 2.4885584115982056
+    "rate": -0.000600000000000008,
+    "need": 0.0041999999999999815,
+    "mins_left": 0.0
    },
    "scalp": {
     "side": "YES",
-    "price": 0.25,
-    "bid": 0.22,
-    "target": 0.3,
-    "payoff": 4.0,
-    "cheap": false,
+    "price": 0.001,
+    "bid": 0.0,
+    "target": 0.05,
+    "payoff": 1000.0,
+    "cheap": true,
     "move_cents": 5,
-    "why": "price action leans UP"
+    "why": "price action leans DOWN (other side unquoted)"
    },
-   "rsi": 47.723935389133594,
-   "rsi_state": "neutral",
+   "rsi": 39.25886143931236,
+   "rsi_state": "cold",
    "momentum_multi": {
-    "m3": 0.0011999999999999789,
-    "m5": 0.0006999999999999229,
-    "m15": -0.0009500000000000064,
-    "prev3": -0.0017500000000000293,
+    "m3": -0.0018000000000000238,
+    "m5": -0.0015000000000000568,
+    "m15": -0.0047000000000000375,
+    "prev3": 0.0008000000000000229,
     "decelerating": false,
-    "rate_per_min": 0.00039999999999999297
+    "rate_per_min": -0.000600000000000008
    },
    "fvg_distance": {
     "above": {
      "dir": "bearish",
-     "lo": 0.96195,
-     "hi": 0.9636,
-     "idx": 9,
-     "age_min": 6,
+     "lo": 0.9602,
+     "hi": 0.96335,
+     "idx": 7,
+     "age_min": 8,
      "inside": false,
-     "distance": 0.0010499999999999954
+     "distance": 0.0015000000000000568
     },
     "below": null,
     "inside": {
      "dir": "bearish",
-     "lo": 0.9602,
-     "hi": 0.9615,
-     "idx": 13,
-     "age_min": 2,
+     "lo": 0.9587,
+     "hi": 0.9597,
+     "idx": 15,
+     "age_min": 0,
      "inside": true,
      "distance": 0.0
     }
    },
-   "dist_vol": 1.2438232134865186,
+   "dist_vol": 2.7563528267988624,
    "skew": {
-    "yes_mid": 0.235,
-    "market_dir": "down",
-    "edge": 53.0
+    "yes_mid": null,
+    "market_dir": null,
+    "edge": 0.0
    },
    "history": {
     "n": 5,
@@ -1437,73 +1475,69 @@
     "direction": "down"
    },
    "reversal": {
-    "flag": true,
-    "trigger": "whale_order",
-    "text": "FLIP COMING \u2014 13,884-lot YES order just stacked.",
-    "why": [
-     "13,884-lot YES order just stacked"
-    ]
+    "flag": false,
+    "text": "",
+    "why": [],
+    "trigger": null
    },
-   "reversal_flag": true,
-   "reversal_text": "FLIP COMING \u2014 13,884-lot YES order just stacked.",
-   "reversal_trigger": "whale_order",
-   "reversal_why": [
-    "13,884-lot YES order just stacked"
-   ],
+   "reversal_flag": false,
+   "reversal_text": "",
+   "reversal_trigger": null,
+   "reversal_why": [],
    "reversal_technical": {
     "flag": true,
     "reasons": [
-     "unfilled bearish FVG 0.9619\u20130.9636 above price, 0.0010 away (0.7x/min vol) \u2014 acts as a magnet back the other way"
+     "unfilled bearish FVG 0.9602\u20130.9634 above price, 0.0015 away (1.0x/min vol) \u2014 acts as a magnet back the other way"
     ],
     "level": "watch",
     "direction": "up",
-    "flip_price": 0.9627749999999999,
-    "eta_min": 4.687499999999982,
-    "text": "PROJECTED FLIP INCOMING \u2014 the move is DOWN, the signals point to a flip UP: unfilled bearish FVG 0.9619\u20130.9636 above price, 0.0010 away (0.7x/min vol) \u2014 acts as a magnet back the other way. It would show around 0.9628 (~5 min at the current rate)."
+    "flip_price": 0.961775,
+    "eta_min": 5.125000000000015,
+    "text": "PROJECTED FLIP INCOMING \u2014 the move is DOWN, the signals point to a flip UP: unfilled bearish FVG 0.9602\u20130.9634 above price, 0.0015 away (1.0x/min vol) \u2014 acts as a magnet back the other way. It would show around 0.9618 (~5 min at the current rate)."
    },
    "drivers": [
-    "gap $0.0020 = 1.2x per-minute vol and 93% of the 2-min noise band",
-    "price action 3\u20131 UP (does not confirm the gap)",
-    "RSI 48 (neutral)",
-    "momentum +0.0012/3m, -0.0010/15m",
+    "gap $0.0042 = 2.8x per-minute vol and 649% of the 0-min noise band",
+    "price action 0\u20133 DOWN (agrees with the gap)",
+    "RSI 39 (cold)",
+    "momentum -0.0018/3m, -0.0047/15m",
     "Fear & Greed 13 (Extreme Fear), -7 vs yesterday \u2014 an extreme reading, contrarian tilt UP",
     "this asset's DOWN setups: 4W-1L"
    ],
    "gate_k": 1.15,
-   "quote_age": 0.45006704330444336,
+   "quote_age": 0.300586462020874,
    "bars_note": "61 live 1-min bars this session",
    "close_time": "2026-11-14T16:30:00Z",
-   "secs_left": 149.31350469589233,
+   "secs_left": 0.0,
    "phase": "called",
    "expected": {
-    "dir": "UP",
-    "text": "Expected: UP \u2014 leaning \u2014 spot is DOWN of the line by 1.2x per-minute vol; price action leans UP; 3-min momentum +0.0012 \u2014 buy YES at 25\u00a2",
+    "dir": "DOWN",
+    "text": "Expected: DOWN \u2014 FIRM \u2014 spot is DOWN of the line by 2.8x per-minute vol; price action leans DOWN; 3-min momentum -0.0018 \u2014 buy NO at 100\u00a2",
     "votes": {
-     "up": 4.3,
-     "down": 3.4219116067432593
+     "up": 1.7000000000000002,
+     "down": 6.4781764133994315
     },
     "why": [
-     "spot is DOWN of the line by 1.2x per-minute vol",
-     "price action leans UP",
-     "3-min momentum +0.0012",
-     "unfilled FVG 0.7x vol UP of spot (magnet)",
+     "spot is DOWN of the line by 2.8x per-minute vol",
+     "price action leans DOWN",
+     "3-min momentum -0.0018",
+     "unfilled FVG 1.0x vol UP of spot (magnet)",
      "fear & greed 13 (Extreme Fear)",
-     "book is priced DOWN (YES mid 24\u00a2)",
      "its own DOWN setups are 4W-1L",
-     "5-min momentum +0.0007",
-     "15-min momentum -0.0010"
+     "5-min momentum -0.0015",
+     "15-min momentum -0.0047",
+     "RSI 39 soft"
     ],
     "drivers": [
-     "spot is DOWN of the line by 1.2x per-minute vol",
-     "price action leans UP",
-     "3-min momentum +0.0012"
+     "spot is DOWN of the line by 2.8x per-minute vol",
+     "price action leans DOWN",
+     "3-min momentum -0.0018"
     ],
-    "strength": 0.5568569311574312,
-    "net": 0.8780883932567405,
-    "firm": false,
-    "entry_price": 0.25,
-    "entry_cents": 25,
-    "side": "YES"
+    "strength": 0.792129698105478,
+    "net": 4.778176413399431,
+    "firm": true,
+    "entry_price": 1.0,
+    "entry_cents": 100,
+    "side": "NO"
    },
    "fired_call": "DOWN",
    "fired_mark": 6,
@@ -1519,20 +1553,20 @@
     "Fear & Greed 13 (Extreme Fear), -7 vs yesterday \u2014 an extreme reading, contrarian tilt UP",
     "this asset's DOWN setups: 4W-1L"
    ],
-   "live_edge_points": 1.9788848973503526,
-   "win_prob": 0.7768733093841022,
-   "win_prob_model": 0.7847888489735035,
-   "win_prob_market": 0.765,
-   "lean_entry_price": 0.25,
-   "lean_entry_cents": 25,
-   "call_entry_cents": 78,
+   "live_edge_points": null,
+   "win_prob": 0.995,
+   "win_prob_model": 1.0,
+   "win_prob_market": null,
+   "lean_entry_price": 1.0,
+   "lean_entry_cents": 100,
+   "call_entry_cents": 100,
    "no_edge": true,
-   "no_edge_price": 0.78,
-   "edge_points": 1.9788848973503526,
-   "cand_model_p": 0.7847888489735035,
-   "cand_market_p": 0.765,
+   "no_edge_price": 1.0,
+   "edge_points": null,
+   "cand_model_p": 1.0,
+   "cand_market_p": null,
    "tradeable": false,
-   "side_ask": 0.78,
+   "side_ask": 1.0,
    "max_call_price": 0.65,
    "min_edge_points": 3.0,
    "fear_greed": {
@@ -1552,90 +1586,90 @@
    "confidence": "HIGH",
    "confidence_label": "HIGH CONFIDENCE",
    "confidence_note": "the call is comfortably ahead",
-   "elapsed_min": 12.518191385269166,
+   "elapsed_min": 15.023414436976115,
    "bars": "61 live 1-min bars this session"
   },
   "doge": {
    "label": "DOGE",
    "dec": 5,
-   "spot": 0.06013,
+   "spot": 0.059885,
    "spot_source": "Coinbase spot",
-   "spot_age": 3.552436828613281e-05,
+   "spot_age": 3.838539123535156e-05,
    "closed": false,
-   "tier": "coin_flip",
-   "tier_label": "COIN FLIP",
+   "tier": "strong",
+   "tier_label": "STRONG",
    "asset": "doge",
    "ticker": "KXDOGE15M-26NOV141130-30",
    "target": 0.060228,
-   "gap": -9.799999999999393e-05,
-   "gap_pct": -0.1629802095459736,
-   "sigma": 0.0001050629440964902,
-   "band": 0.00014060172946165212,
+   "gap": -0.0003429999999999961,
+   "gap_pct": -0.5727644652250081,
+   "sigma": 0.00010377539849758853,
+   "band": 4.410454436147512e-05,
    "nbars": 15,
-   "yes_bid": 0.22,
-   "yes_ask": 0.24,
-   "no_bid": 0.76,
-   "no_ask": 0.78,
-   "spread": 0.01999999999999999,
-   "no_bid_eff": 0.76,
-   "no_ask_eff": 0.78,
-   "price_label": "DOWN \u2014 NO costs 78\u00a2",
-   "price_yes": "YES 22\u00a2 / 24\u00a2",
-   "price_no": "NO 76\u00a2 / 78\u00a2",
-   "open_interest": 12221.67,
-   "mins_left": 2.478816286722819,
+   "yes_bid": 0.0,
+   "yes_ask": 0.001,
+   "no_bid": 0.999,
+   "no_ask": 1.0,
+   "spread": 0.001,
+   "no_bid_eff": 0.999,
+   "no_ask_eff": 1.0,
+   "price_label": "DOWN \u2014 NO costs 100\u00a2",
+   "price_yes": "YES 0\u00a2 / 0\u00a2",
+   "price_no": "NO 100\u00a2 / 100\u00a2",
+   "open_interest": 24591.09,
+   "mins_left": 0.0,
    "call": "DOWN",
    "weak": false,
-   "conviction": "coin_flip",
-   "reason": "CALL DOWN \u2014 COIN FLIP \u2014 driven by gap $0.00010 = 0.9x per-minute vol and 70% of the 2-min noise band; price action 2\u20131 UP (does not confirm the gap); RSI 49 (neutral). COIN FLIP \u2014 the gap is INSIDE the noise band ($0.00010 vs a $0.00014 band over the 2 min still to run). This is a direction because a call is made every round, not because the read is good. Near 50/50 \u2014 size it that way or skip it. History note: only 4 settled DOWN calls on DOGE so far \u2014 too few to lean on. PRICED OUT \u2014 costs 78\u00a2 to win 22\u00a2; edge -4.7 pts (72% us vs 77% market). Call stands; don't buy it here. FLIP COMING \u2014 10,481-lot YES order just stacked.",
+   "conviction": "strong",
+   "reason": "CALL DOWN \u2014 STRONG \u2014 driven by gap $0.00034 = 3.3x per-minute vol and 778% of the 0-min noise band; price action 1\u20133 DOWN (agrees with the gap); RSI 37 (cold). Downgraded from a clean read by: an unfilled bullish AND bearish gap are both open (chop); fear & greed is at 13 (Extreme Fear) \u2014 an extreme reading tilting against a DOWN move. History note: only 4 settled DOWN calls on DOGE so far \u2014 too few to lean on. PRICED OUT \u2014 costs 100\u00a2 to win 0\u00a2. Call stands; don't buy it here.",
    "signals": [
     {
      "name": "FVG",
      "lean": "down",
-     "text": "bearish, 0.06013\u20130.06019, unfilled, price inside it \u2014 leans DOWN if it holds"
+     "text": "bearish, 0.05989\u20130.05999, unfilled, price inside it \u2014 leans DOWN if it holds"
     },
     {
      "name": "Sweep",
-     "lean": null,
-     "text": "no liquidity sweep in the last 15 min"
+     "lean": "up",
+     "text": "swept the low, closed back above at 0.06006, 2 bar(s) ago \u2014 bullish"
     },
     {
      "name": "Exhaustion",
-     "lean": "up",
-     "text": "6 bars down \u2014 exhaustion leans UP"
+     "lean": "down",
+     "text": "1 bars up, ranges contracting \u2014 exhaustion leans DOWN"
     },
     {
      "name": "Momentum",
-     "lean": "up",
-     "text": "+0.00007 over 3m, -0.00001 over 5m, decelerating"
+     "lean": "down",
+     "text": "-0.00021 over 3m, -0.00023 over 5m, accelerating"
     },
     {
      "name": "S/R",
      "lean": null,
-     "text": "round high 0.06049 (+0.00036 away), low 0.06006 (-0.00007 away), target line -0.00010 away (the line is a magnet)"
+     "text": "round high 0.06049 (+0.00061 away), low 0.05989 (-0.00000 away), target line -0.00034 away (the line is a magnet)"
     }
    ],
-   "signal_lean": "up",
+   "signal_lean": "down",
    "gap_dir": "down",
-   "entry_price": 0.78,
-   "breakeven": 0.8,
-   "fee": 0.02,
+   "entry_price": 1.0,
+   "breakeven": 1.0,
+   "fee": 0.0,
    "fvgs": {
     "bullish": [
      {
       "dir": "bullish",
       "lo": 0.0602,
       "hi": 0.060265,
-      "idx": 6,
-      "age_min": 9,
+      "idx": 3,
+      "age_min": 12,
       "inside": false
      },
      {
       "dir": "bullish",
       "lo": 0.06029,
       "hi": 0.060395,
-      "idx": 8,
-      "age_min": 7,
+      "idx": 5,
+      "age_min": 10,
       "inside": false
      }
     ],
@@ -1644,24 +1678,48 @@
       "dir": "bearish",
       "lo": 0.06027,
       "hi": 0.06031,
-      "idx": 9,
-      "age_min": 6,
+      "idx": 6,
+      "age_min": 9,
       "inside": false
      },
      {
       "dir": "bearish",
       "lo": 0.060165,
       "hi": 0.060395,
-      "idx": 10,
-      "age_min": 5,
+      "idx": 7,
+      "age_min": 8,
       "inside": false
      },
      {
       "dir": "bearish",
       "lo": 0.06013,
       "hi": 0.060185,
+      "idx": 10,
+      "age_min": 5,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 0.06011,
+      "hi": 0.06015,
       "idx": 13,
       "age_min": 2,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 0.059995,
+      "hi": 0.0601,
+      "idx": 14,
+      "age_min": 1,
+      "inside": false
+     },
+     {
+      "dir": "bearish",
+      "lo": 0.059885,
+      "hi": 0.05999,
+      "idx": 15,
+      "age_min": 0,
       "inside": true
      }
     ]
@@ -1669,34 +1727,15 @@
    "chop": true,
    "whale_orders": {
     "available": true,
-    "big": [
-     {
-      "side": "YES",
-      "price": 0.021,
-      "size": 4527.0,
-      "x_median": 88.76470588235294
-     },
-     {
-      "side": "YES",
-      "price": 0.041,
-      "size": 2304.0,
-      "x_median": 45.1764705882353
-     },
-     {
-      "side": "YES",
-      "price": 0.052,
-      "size": 2167.0,
-      "x_median": 42.490196078431374
-     }
-    ],
+    "big": [],
     "changes": [
-     "a 10,481-lot YES order appeared at 0\u00a2",
-     "a 351-lot YES order appeared at 9\u00a2",
-     "a 1,267-lot YES order appeared at 12\u00a2"
+     "a 2,783-lot NO order left 0\u00a2",
+     "a 763-lot NO order left 0\u00a2",
+     "a 213-lot NO order left 0\u00a2"
     ],
     "depth": {
-     "yes": 61246.509999999995,
-     "no": 97523.39000000003
+     "yes": 0,
+     "no": 0
     }
    },
    "whale_trades": {
@@ -1704,115 +1743,114 @@
     "n": 200,
     "big": [
      {
-      "size": 520.0,
+      "size": 1062.24,
       "side": "NO",
-      "price": 0.19,
+      "price": 0.001,
       "block": false,
-      "ts": 1794673625.0
+      "ts": 1794673743.0
      },
      {
-      "size": 350.0,
-      "side": "NO",
-      "price": 0.17,
+      "size": 1049.52,
+      "side": "YES",
+      "price": 0.001,
       "block": false,
-      "ts": 1794673625.0
+      "ts": 1794673749.0
      },
      {
-      "size": 300.0,
-      "side": "NO",
-      "price": 0.17,
+      "size": 800.8,
+      "side": "YES",
+      "price": 0.001,
       "block": false,
-      "ts": 1794673625.0
+      "ts": 1794673749.0
      }
     ],
-    "yes_vol": 849.31,
-    "no_vol": 3930.8099999999995,
-    "median": 5.0
+    "yes_vol": 9190.34,
+    "no_vol": 6531.620000000001,
+    "median": 10.65
    },
    "spot_whales": {
     "available": true,
-    "n": 144,
+    "n": 200,
     "big": [
      {
-      "size": 108574.7,
-      "price": 0.06023,
-      "dir": "sell",
-      "ts": 1794673406.0,
-      "x_median": 36.50674153525436
+      "size": 68970.8,
+      "price": 0.05986,
+      "dir": "buy",
+      "ts": 1794673758.0,
+      "x_median": 34.4854
      },
      {
-      "size": 57389.1,
-      "price": 0.06023,
+      "size": 63227.7,
+      "price": 0.05985,
       "dir": "sell",
-      "ts": 1794673406.0,
-      "x_median": 19.29629131501967
+      "ts": 1794673758.0,
+      "x_median": 31.61385
      },
      {
-      "size": 54426.4,
-      "price": 0.06011,
+      "size": 56982.7,
+      "price": 0.05986,
       "dir": "sell",
-      "ts": 1794673438.0,
-      "x_median": 18.30012440738375
+      "ts": 1794673758.0,
+      "x_median": 28.491349999999997
      }
     ],
-    "median": 2974.1,
-    "buy_vol": 590347.5000000001,
-    "sell_vol": 301325.70000000007
+    "median": 2000.0,
+    "buy_vol": 402037.8,
+    "sell_vol": 750891.0000000002
    },
    "flip": {
     "available": true,
     "on_pace": false,
-    "eta": 4.199999999999703,
-    "rate": 2.333333333333354e-05,
-    "need": 9.799999999999393e-05,
-    "mins_left": 2.478816286722819
+    "rate": -7.166666666666664e-05,
+    "need": 0.0003429999999999961,
+    "mins_left": 0.0
    },
    "scalp": {
     "side": "YES",
-    "price": 0.24,
-    "bid": 0.22,
-    "target": 0.29,
-    "payoff": 4.166666666666667,
-    "cheap": false,
+    "price": 0.001,
+    "bid": 0.0,
+    "target": 0.05,
+    "payoff": 1000.0,
+    "cheap": true,
     "move_cents": 5,
-    "why": "price action leans UP"
+    "why": "price action leans DOWN (other side unquoted)"
    },
-   "rsi": 49.172576832151336,
-   "rsi_state": "neutral",
+   "rsi": 36.94029850746278,
+   "rsi_state": "cold",
    "momentum_multi": {
-    "m3": 7.000000000000062e-05,
-    "m5": -9.999999999996123e-06,
-    "m15": -1.9999999999999185e-05,
-    "prev3": -0.00014999999999999736,
-    "decelerating": true,
-    "rate_per_min": 2.333333333333354e-05
+    "m3": -0.0002149999999999999,
+    "m5": -0.0002349999999999991,
+    "m15": -0.0003449999999999981,
+    "prev3": 3.999999999999837e-05,
+    "decelerating": false,
+    "rate_per_min": -7.166666666666664e-05
    },
    "fvg_distance": {
     "above": {
      "dir": "bearish",
-     "lo": 0.060165,
-     "hi": 0.060395,
-     "idx": 10,
-     "age_min": 5,
+     "lo": 0.059995,
+     "hi": 0.0601,
+     "idx": 14,
+     "age_min": 1,
      "inside": false,
-     "distance": 3.500000000000031e-05
+     "distance": 0.00010999999999999899
     },
     "below": null,
     "inside": {
      "dir": "bearish",
-     "lo": 0.06013,
-     "hi": 0.060185,
-     "idx": 13,
-     "age_min": 2,
+     "lo": 0.059885,
+     "hi": 0.05999,
+     "idx": 15,
+     "age_min": 0,
      "inside": true,
      "distance": 0.0
     }
    },
-   "dist_vol": 0.9327741654563797,
+   "dist_vol": 3.305214963910416,
    "skew": {
-    "yes_mid": 0.22999999999999998,
-    "market_dir": "down",
-    "edge": 54.0
+    "yes_mid": null,
+    "market_dir": null,
+    "edge": 0.0
    },
    "history": {
     "n": 4,
@@ -1823,73 +1861,68 @@
     "direction": "down"
    },
    "reversal": {
-    "flag": true,
-    "trigger": "whale_order",
-    "text": "FLIP COMING \u2014 10,481-lot YES order just stacked.",
-    "why": [
-     "10,481-lot YES order just stacked"
-    ]
+    "flag": false,
+    "text": "",
+    "why": [],
+    "trigger": null
    },
-   "reversal_flag": true,
-   "reversal_text": "FLIP COMING \u2014 10,481-lot YES order just stacked.",
-   "reversal_trigger": "whale_order",
-   "reversal_why": [
-    "10,481-lot YES order just stacked"
-   ],
+   "reversal_flag": false,
+   "reversal_text": "",
+   "reversal_trigger": null,
+   "reversal_why": [],
    "reversal_technical": {
     "flag": true,
     "reasons": [
-     "momentum decelerating hard (+0.00007 over 3m vs -0.00015 the 3m before)",
-     "unfilled bearish FVG 0.06017\u20130.06039 above price, 0.00004 away (0.3x/min vol) \u2014 acts as a magnet back the other way"
+     "unfilled bearish FVG 0.05999\u20130.06010 above price, 0.00011 away (1.1x/min vol) \u2014 acts as a magnet back the other way"
     ],
-    "level": "high",
+    "level": "watch",
     "direction": "up",
-    "flip_price": 0.06028,
-    "eta_min": 6.428571428571258,
-    "text": "PROJECTED FLIP INCOMING \u2014 the move is DOWN, the signals point to a flip UP: momentum decelerating hard (+0.00007 over 3m vs -0.00015 the 3m before); unfilled bearish FVG 0.06017\u20130.06039 above price, 0.00004 away (0.3x/min vol) \u2014 acts as a magnet back the other way. It would show around 0.06028 (~6 min at the current rate)."
+    "flip_price": 0.060047500000000004,
+    "eta_min": 2.2674418604651576,
+    "text": "PROJECTED FLIP INCOMING \u2014 the move is DOWN, the signals point to a flip UP: unfilled bearish FVG 0.05999\u20130.06010 above price, 0.00011 away (1.1x/min vol) \u2014 acts as a magnet back the other way. It would show around 0.06005 (~2 min at the current rate)."
    },
    "drivers": [
-    "gap $0.00010 = 0.9x per-minute vol and 70% of the 2-min noise band",
-    "price action 2\u20131 UP (does not confirm the gap)",
-    "RSI 49 (neutral)",
-    "momentum +0.00007/3m, -0.00002/15m",
+    "gap $0.00034 = 3.3x per-minute vol and 778% of the 0-min noise band",
+    "price action 1\u20133 DOWN (agrees with the gap)",
+    "RSI 37 (cold)",
+    "momentum -0.00021/3m, -0.00034/15m",
     "Fear & Greed 13 (Extreme Fear), -7 vs yesterday \u2014 an extreme reading, contrarian tilt UP",
     "this asset's DOWN setups: 2W-2L (small sample \u2014 weighted lightly)"
    ],
    "gate_k": 1.15,
-   "quote_age": 0.39425206184387207,
+   "quote_age": 0.3875441551208496,
    "bars_note": "61 live 1-min bars this session",
    "close_time": "2026-11-14T16:30:00Z",
-   "secs_left": 148.72897720336914,
+   "secs_left": 0.0,
    "phase": "called",
    "expected": {
-    "dir": "UP",
-    "text": "Expected: UP \u2014 leaning \u2014 spot is DOWN of the line by 0.9x per-minute vol; price action leans UP; 3-min momentum +0.00007 \u2014 buy YES at 24\u00a2",
+    "dir": "DOWN",
+    "text": "Expected: DOWN \u2014 FIRM \u2014 spot is DOWN of the line by 3.3x per-minute vol; price action leans DOWN; 3-min momentum -0.00021 \u2014 buy NO at 100\u00a2",
     "votes": {
-     "up": 3.8,
-     "down": 3.16638708272819
+     "up": 1.3,
+     "down": 6.000000000000001
     },
     "why": [
-     "spot is DOWN of the line by 0.9x per-minute vol",
-     "price action leans UP",
-     "3-min momentum +0.00007",
-     "unfilled FVG 0.3x vol UP of spot (magnet)",
+     "spot is DOWN of the line by 3.3x per-minute vol",
+     "price action leans DOWN",
+     "3-min momentum -0.00021",
      "fear & greed 13 (Extreme Fear)",
-     "book is priced DOWN (YES mid 23\u00a2)",
-     "5-min momentum -0.00001",
-     "15-min momentum -0.00002"
+     "5-min momentum -0.00023",
+     "15-min momentum -0.00034",
+     "unfilled FVG 1.1x vol UP of spot (magnet)",
+     "RSI 37 soft"
     ],
     "drivers": [
-     "spot is DOWN of the line by 0.9x per-minute vol",
-     "price action leans UP",
-     "3-min momentum +0.00007"
+     "spot is DOWN of the line by 3.3x per-minute vol",
+     "price action leans DOWN",
+     "3-min momentum -0.00021"
     ],
-    "strength": 0.5454764363325956,
-    "net": 0.6336129172718099,
-    "firm": false,
-    "entry_price": 0.24,
-    "entry_cents": 24,
-    "side": "YES"
+    "strength": 0.8219178082191781,
+    "net": 4.700000000000001,
+    "firm": true,
+    "entry_price": 1.0,
+    "entry_cents": 100,
+    "side": "NO"
    },
    "fired_call": "NO CALL",
    "fired_mark": 6,
@@ -1908,16 +1941,16 @@
    "win_prob": null,
    "win_prob_model": null,
    "win_prob_market": null,
-   "lean_entry_price": 0.24,
-   "lean_entry_cents": 24,
-   "call_entry_cents": 78,
+   "lean_entry_price": 1.0,
+   "lean_entry_cents": 100,
+   "call_entry_cents": 100,
    "no_edge": true,
-   "no_edge_price": 0.78,
-   "edge_points": -4.677344337533795,
-   "cand_model_p": 0.7232265566246621,
-   "cand_market_p": 0.77,
+   "no_edge_price": 1.0,
+   "edge_points": null,
+   "cand_model_p": 1.0,
+   "cand_market_p": null,
    "tradeable": false,
-   "side_ask": 0.78,
+   "side_ask": 1.0,
    "max_call_price": 0.65,
    "min_edge_points": 3.0,
    "fear_greed": {
@@ -1937,7 +1970,7 @@
    "confidence": "UNKNOWN",
    "confidence_label": "NO READ",
    "confidence_note": "not enough data to price the call right now",
-   "elapsed_min": 12.526382513840993,
+   "elapsed_min": 15.031675819555918,
    "bars": "61 live 1-min bars this session"
   }
  },
